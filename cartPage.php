@@ -11,40 +11,13 @@
 </head>
 
 <body>
-<!-- Jumbotron Store Name & Slogan -->
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Cool Guy Shirt Co</h1>      
-    <p>Slogan</p>
-  </div>
-</div>
 
-
-<!-- Navbar -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="productPage.html">Products</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="accountPage.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <li><a class="active" href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
+<?php include("main.php"); ?>
+    <script>  
+        $(document).ready(function(){
+            $("#cart-page").addClass("active");
+        });
+    </script>    
 <?php
 
     $server = mysql_connect("localhost","root", "");
