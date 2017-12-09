@@ -13,7 +13,6 @@ This application is an online store for the "Cool Guy Shirt Company." The applic
 
 ### Schema
 #### Users Table
-mysql> SHOW COLUMNS FROM Users;
 
 | Field        | Type     | Null | Key | Default |
 | :-----------: | :------: | --- | --- | ---- |
@@ -26,11 +25,16 @@ mysql> SHOW COLUMNS FROM Users;
 | ZipCode      | int(5)   | NO   |     | NULL    |      
 
 #### Products Table
-| Tables        | Are           | Cool  |
-| :-------------: |:-------------:| :-----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Field            | Type        | Null | Key | Default | 
+| ---------------- | ----------- | --- | ----- | ------ |
+| Name             | varchar(20) | NO   |     | NULL    |       
+| ProductID        | int(3)      | NO   |     | NULL    |       
+| Price            | int(5)      | NO   |     | NULL    |       
+| Size             | mediumblob  | NO   |     | NULL    |       
+| Description      | tinytext    | YES  |     | NULL    |       
+| Picture          | mediumblob  | YES  |     | NULL    |       
+| DateOrdered      | datetime(6) | NO   |     | NULL    |       
+| NumberOfProducts | int(2)      | YES  |     | 1       |       
 
 ### ERD
 
