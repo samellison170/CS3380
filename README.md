@@ -43,5 +43,5 @@ This application is an online store for the "Cool Guy Shirt Company." The applic
 The user can **create** a new account if they don't have one already, **retrieve** past user info by signing in, **update** their account information by editing it, and **delete** their user if they desire. The page also dynamically **reads** product information from products database.
 
 ### Video URL
-[YouTube Link to Walkthrough](https://)
+[YouTube Link to Walkthrough](https://www.youtube.com/watch?v=seNVvA3T3-Y)
 
