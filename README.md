@@ -28,7 +28,7 @@ This application is an online store for the "Cool Guy Shirt Company." The applic
 | Field            | Type        | Null | Key | Default | 
 | ---------------- | ----------- | --- | ----- | ------ |
 | Name             | varchar(20) | NO   |     | NULL    |       
-| ProductID        | int(3)      | NO   |     | NULL    |       
+| ProductID        | int(3)      | NO   | PRI | NULL    |       
 | Price            | int(5)      | NO   |     | NULL    |       
 | Size             | mediumblob  | NO   |     | NULL    |       
 | Description      | tinytext    | YES  |     | NULL    |       
