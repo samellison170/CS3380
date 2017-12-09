@@ -1,4 +1,24 @@
 <!DOCTYPE html>
+<?php
+    // HTTPS redirect
+    if ($_SERVER['HTTPS'] !== 'on') {
+		$redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+		header("Location: $redirectURL");
+		exit;
+	}
+    
+	// Every time we want to access $_SESSION, we have to call session_start()
+	if(!session_start()) {
+		header("Location: error.php");
+		exit;
+	}
+	
+	$loggedIn = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
+	if (!$loggedIn) {
+		header("Location: login.php");
+		exit;
+	}
+?>
 <html lang="en">
 <head>
   <title>User Login Page</title>
@@ -17,33 +37,7 @@
                 $("#account-page").addClass("active");
             });
         </script> 
-<!-- Login Form -->
-<div class="container">
-  <form class="form-horizontal" action="/action_page.php">
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Email:</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
-      <div class="col-sm-10">          
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-<div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <a href="createUser.html">Create Account</a>
-      </div>
-    </div>
-  </form>
-</div>
 
+<button><a href='logout.php'>Logout</a></button>
 </body>
 </html>
