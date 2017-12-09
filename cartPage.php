@@ -57,7 +57,7 @@
         </div>
         <div class="col-md-12">
             <div class="pull-right">
-                <a href="productPage.html" class="btn">Back to Shopping</a>
+                <a href="productPage.php" class="btn">Back to Shopping</a>
                 <a href="#" class="btn btn-success">Checkout</a>
             </div>
         </div>

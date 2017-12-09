@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="assets/css/material-kit.css" rel="stylesheet"/>
+<!--        <link href="assets/css/material-kit.css" rel="stylesheet"/>-->
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -45,7 +45,7 @@
         <div class="jumbotron">
             <div class="container text-center">
                 <h1>Cool Guy Shirt Co</h1>      
-                <p>Slogan</p>
+                <p>We sell three shirts</p>
             </div>
         </div>
 
@@ -58,11 +58,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#">Logo</a>
+                    <img class="navbar-brand" src="images/logo.jpg"/>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li id="home-page"><a href="homePage.php">Home</a></li>
+                        <li id="home-page"><a href="index.php">Home</a></li>
                         <li id="product-page"><a href="productPage.php">Products</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">

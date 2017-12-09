@@ -1,10 +1,35 @@
+<?php  session_start();
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $emailAddress = $_POST['emailAddress'];
+    $userPassword = $_POST['userPassword'];
+    $servername = "localhost";
+    $username = "root";
+    $password = "Opg523c3";
+    $database = "CoolGuyShirtCo";
+    $db = mysqli_connect($servername, $username, $password, $database);
+    $sql = "SELECT * FROM Users WHERE EmailAddress = '$emailAddress' and Password = '$userPassword'";
+    $result = mysqli_query($db,$sql);
+    $userType = mysqli_num_rows($result);
+    if($userType == 0) echo "<h2 id='response'>Invalid username or pasword, <a href='login_form.php'> try again.</a></h1>";
+    if($userType == 1){
+        $_SESSION['loggedin']=$emailAddress;
+	$_SESSION['email']=$emailAddress;
+	$_SESSION['password']=$userPassword;
+        setcookie("loggedin", 1, time() + (86400 * 30), "/");
+        echo '<script type="text/javascript"> window.open("accountPage.php","_self");</script>';
+    }
+}
+ ?>
+
+
 <?php
+/*
 	// Here we are using sessions to propagate the login
 	// http://us3.php.net/manual/en/intro.session.php
 
     // HTTPS redirect
-    if ($_SERVER['HTTPS'] !== 'on') {
-		$redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    if ($_SERVER['HTTP'] !== 'on') {
+		$redirectURL = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 		header("Location: $redirectURL");
 		exit;
 	}
@@ -102,5 +127,5 @@
 		require "login_form.php";
         exit;
 	}
-	
+	*/
 ?>

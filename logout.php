@@ -1,4 +1,10 @@
 <?php
+    session_start();
+    setcookie("loginStatus", 0, time() + (86400 * 30), "/");
+    session_destroy();
+    header("Location: index.php");
+?>
+/*
 	if(!session_start()) {
 		header("Location: error.php");
 		exit;
@@ -28,4 +34,4 @@
 	// Redirect to login
 	header("Location: index.html");
 	exit;
-?>
+*/
