@@ -18,6 +18,12 @@ This application is an online store for the "Cool Guy Shirt Company." The applic
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+#### Products Table
+| Tables        | Are           | Cool  |
+| :-------------: |:-------------:| :-----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ### ERD
 
