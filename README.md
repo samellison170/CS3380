@@ -37,7 +37,7 @@ This application is an online store for the "Cool Guy Shirt Company." The applic
 | NumberOfProducts | int(2)      | YES  |     | 1       |       
 
 ### ERD
-![ERD Image](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![ERD Image](http://ec2-34-209-172-3.us-west-2.compute.amazonaws.com/CoolGuyShirtCo/ERD.png "ERD LOGO")
 
 ### CRUD explanation
 The user can **create** a new account if they don't have one already, **retrieve** past user info by signing in, **update** their account information by editing it, and **delete** their user if they desire. The page also dynamically **reads** product information from products database.
