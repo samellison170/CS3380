@@ -6,7 +6,7 @@
 * Jordan Whitbey
 * Nicole Dillon
 * Sam Ellison
-* John Lund
+* John Lund-Molfese
 
 ### Application Description
 This application is an online store for the "Cool Guy Shirt Company." The application can be used to purchase a shirt from three designs. The user can create an account with personal information, editing or deleting it later. Furthermore, the user can sign back in at a later date with their information stored in a database.
