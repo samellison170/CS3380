@@ -14,17 +14,17 @@ This application is an online store for the "Cool Guy Shirt Company." The applic
 ### Schema
 #### Users Table
 mysql> SHOW COLUMNS FROM Users;
-+--------------+----------+------+-----+---------+-------+
-| Field        | Type     | Null | Key | Default | Extra |
-+--------------+----------+------+-----+---------+-------+
-| Username     | char(20) | NO   | PRI | NULL    |       |
-| Address      | char(40) | NO   |     | NULL    |       |
-| State        | tinytext | NO   |     | NULL    |       |
-| Password     | char(20) | NO   |     | NULL    |       |
-| EmailAddress | tinytext | NO   |     | NULL    |       |
-| Phone        | int(10)  | NO   |     | NULL    |       |
-| ZipCode      | int(5)   | NO   |     | NULL    |       |
-+--------------+----------+------+-----+---------+-------+
+
+| Field        | Type     | Null | Key | Default |
+| :-----------: | :------: | --- | --- | ---- |
+| Username     | char(20) | NO   | PRI | NULL    |       
+| Address      | char(40) | NO   |     | NULL    |       
+| State        | tinytext | NO   |     | NULL    |       
+| Password     | char(20) | NO   |     | NULL    |       
+| EmailAddress | tinytext | NO   |     | NULL    |       
+| Phone        | int(10)  | NO   |     | NULL    |       
+| ZipCode      | int(5)   | NO   |     | NULL    |      
+
 #### Products Table
 | Tables        | Are           | Cool  |
 | :-------------: |:-------------:| :-----:|
